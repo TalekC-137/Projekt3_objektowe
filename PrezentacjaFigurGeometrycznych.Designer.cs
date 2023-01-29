@@ -35,7 +35,7 @@
             this.txt_N = new System.Windows.Forms.TextBox();
             this.btn_start = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_n = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_rysownica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -95,21 +95,21 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // label2
+            // lbl_n
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 40);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "podaj liczbę figur\r\n do wykreśłenia";
+            this.lbl_n.AutoSize = true;
+            this.lbl_n.Location = new System.Drawing.Point(27, 44);
+            this.lbl_n.Name = "lbl_n";
+            this.lbl_n.Size = new System.Drawing.Size(126, 40);
+            this.lbl_n.TabIndex = 5;
+            this.lbl_n.Text = "podaj liczbę figur\r\n do wykreśłenia";
             // 
             // PrezentacjaFigurGeometrycznych
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1281, 646);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_n);
             this.Controls.Add(this.btn_start);
             this.Controls.Add(this.txt_N);
             this.Controls.Add(this.pb_rysownica);
@@ -132,6 +132,6 @@
         private TextBox txt_N;
         private Button btn_start;
         private ErrorProvider errorProvider1;
-        private Label label2;
+        private Label lbl_n;
     }
 }

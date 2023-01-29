@@ -30,5 +30,29 @@ namespace Projekt3_Talkiewicz_61184
 
 
         }
+
+        private void btn_bry³y_Click(object sender, EventArgs e)
+        {
+            foreach (Form Formularz in Application.OpenForms)
+            {
+
+                if (Formularz.Name == "PrezentacjaBrylGeometrycznych")
+                {
+
+                    this.Hide();
+
+                    Formularz.Show();
+
+                    return;
+                }
+
+
+            }
+
+            PrezentacjaBrylGeometrycznych FormularzPrezentacj = new PrezentacjaBrylGeometrycznych();
+            Hide();
+            FormularzPrezentacj.Show();
+
+        }
     }
 }

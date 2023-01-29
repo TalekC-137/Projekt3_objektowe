@@ -16,17 +16,30 @@ namespace Projekt3_Talkiewicz_61184
     public partial class PrezentacjaFigurGeometrycznych : Form 
     {
 
-        Graphics rysownica; //TODO zainicjalizować to
+        Graphics rysownica; 
 
         Punkt[] TFG;
         int IndexTFG = 0;
 
+        const int MarginesFormularza = 16;
 
 
 
         public PrezentacjaFigurGeometrycznych()
         {
             InitializeComponent();
+
+
+            this.Left = MarginesFormularza;
+
+            this.Width = (int) (Screen.PrimaryScreen.Bounds.Width * 0.85F);
+            this.Height = (int)(Screen.PrimaryScreen.Bounds.Height * 0.85F);
+
+
+            lbl_n.Location = new Point(this.Left + MarginesFormularza, this.Top + 2* MarginesFormularza);
+
+            pb_rysownica.Location = new Point(lbl_n.Location.X + lbl_n.Width + MarginesFormularza, lbl_n.Location.Y);
+
 
             pb_rysownica.Image = new Bitmap(pb_rysownica.Width, pb_rysownica.Height);
             rysownica = Graphics.FromImage(pb_rysownica.Image);

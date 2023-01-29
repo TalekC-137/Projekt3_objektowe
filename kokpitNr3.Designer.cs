@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btn_figury = new System.Windows.Forms.Button();
+            this.btn_bryły = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_figury
@@ -42,11 +43,23 @@
             this.btn_figury.UseVisualStyleBackColor = true;
             this.btn_figury.Click += new System.EventHandler(this.btn_figury_Click);
             // 
+            // btn_bryły
+            // 
+            this.btn_bryły.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_bryły.Location = new System.Drawing.Point(453, 161);
+            this.btn_bryły.Name = "btn_bryły";
+            this.btn_bryły.Size = new System.Drawing.Size(322, 120);
+            this.btn_bryły.TabIndex = 1;
+            this.btn_bryły.Text = "Prezentacja Brył";
+            this.btn_bryły.UseVisualStyleBackColor = true;
+            this.btn_bryły.Click += new System.EventHandler(this.btn_bryły_Click);
+            // 
             // kokpitNr3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(923, 486);
+            this.Controls.Add(this.btn_bryły);
             this.Controls.Add(this.btn_figury);
             this.Name = "kokpitNr3";
             this.Text = "Form1";
@@ -57,5 +70,6 @@
         #endregion
 
         private Button btn_figury;
+        private Button btn_bryły;
     }
 }
